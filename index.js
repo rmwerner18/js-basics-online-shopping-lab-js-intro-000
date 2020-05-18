@@ -39,8 +39,9 @@ function removeFromCart(item) {
 if (cart.includes(`${item}`) === false) {return `That item is not in your cart.`}
 }
 
-function placeOrder(cardNumber)
+function placeOrder(cardNumber) {
+  var total = total()
   {if (cardNumber === undefined ) {return `Sorry, we don't have a credit card on file for you.`}
-  else {console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)}
+  else {return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
 return cart.splice(0, cart.length)
-}
+}}}
