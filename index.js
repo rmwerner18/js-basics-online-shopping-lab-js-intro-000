@@ -40,5 +40,5 @@ if (cart.includes(`${item}`) === false) {return `That item is not in your cart.`
 }
 
 function placeOrder(cardNumber) {
-  {cardNumber === undefined ? `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.` :
-   `Sorry, we don't have a credit card on file for you.`}}}
+  {cardNumber === undefined ? `Sorry, we don't have a credit card on file for you.` :
+  `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`}}
