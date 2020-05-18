@@ -35,7 +35,7 @@ function total() {
 function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++)
   {if (`${item}` === cart[i].itemName) {return cart.splice(i, 1)}
-  else if (cart.includes(` itemName: ${item}, itemPrice: ${cart[i].itemPrice} `) === false)
+  else if (cart.includes( itemName: `${item}`, itemPrice: cart[i].itemPrice ) === false)
   {return `That item is not in cour cart.`}
 }}
 
