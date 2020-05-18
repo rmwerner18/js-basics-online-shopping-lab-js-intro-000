@@ -35,7 +35,9 @@ function total() {
 function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++)
   {if (`${item}` === cart[i].itemName) {return cart.splice(i, 1)}
-}}
+}
+if (cart.includes(`${item}`) === false) {return `That item is not in your cart.`}
+}
 
 function placeOrder(cardNumber) {
   if (cardNumber === undefined ) {return `Sorry, we don't have a credit card on file for you.`}
