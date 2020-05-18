@@ -41,7 +41,7 @@ if (removeFromCart(`${item}`) === `undefined`) {return `That item is not in cour
 
 function placeOrder(cardNumber) {
   if (cardNumber === undefined ) {return `Sorry, we don't have a credit card on file for you.`}
-  else {cart.slice(cart.length);
+  else {cart.shift(cart);
     return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
 }
 }
