@@ -40,6 +40,7 @@ if (cart.includes(`${item}`) === false) {return `That item is not in your cart.`
 }
 
 function placeOrder(cardNumber) {
+  var newCart = [] = cart.splice(0, cart.length)
   {if (cardNumber === undefined) {return `Sorry, we don't have a credit card on file for you.`}
   else {return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`}}
-return cart.splice(0, cart.length)}
+return newCart}
